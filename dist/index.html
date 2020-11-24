@@ -19,8 +19,10 @@
       {{#each data}} 
       <div class='recipe'> 
         
-        <img class='picture' src='{{this.img}}'> <br>
-        <p class='title'>  {{this.title}}</p>
+      <img class='picture'  src='{{this.img}}'> <br>
+        <a href= '{{this.href}}'
+        <p class='title' onclick='{{onTitleClick}}'>  {{this.title}}</p>
+       </a>
         <ul class='ingredients'> {{#each this.ingredients}}
               <li> {{this}} </li>
           {{/each}}

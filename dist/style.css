@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(233, 236, 239);
+    font-family: 'Montserrat', sans-serif;
+}
+input {
+    height: 50px;
+    font-size: larger;
+    width: 75%;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: rgb(34, 34, 59) solid 3px;
+  }
+  
+  button {
+      height: 50px;
+      font-size: larger;
+      width: 10%;
+      border: rgb(34, 34, 59) solid 3px;
+      border-radius: 5px;
+      box-shadow: rgb(37, 37, 65) 0px 2px 8px 0px
+  }
+
+  .recipe-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 2fr);
+    grid-gap: 20px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.picture {
+    width: 70%;
+    height: 50%;
+}
+
