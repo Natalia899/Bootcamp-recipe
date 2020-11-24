@@ -32,5 +32,8 @@ input {
 .picture {
     width: 70%;
     height: 50%;
+    margin: 10px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
 }
 

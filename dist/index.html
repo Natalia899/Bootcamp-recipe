@@ -19,7 +19,7 @@
       {{#each data}} 
       <div class='recipe'> 
         
-      <img class='picture'  src='{{this.img}}'> <br>
+        <img class='picture'  src='{{this.img}}'  onclick="onFoodClick({{clickHelper this}})" > <br>
         <a href= '{{this.href}}'
         <p class='title' onclick='{{onTitleClick}}'>  {{this.title}}</p>
        </a>
