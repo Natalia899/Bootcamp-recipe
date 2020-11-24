@@ -13,7 +13,15 @@ app.get('/recipes/:ingredient', function (req, res) {
     urllib.request(`https://recipes-goodness.herokuapp.com/recipes/${ingredient}`, function (err, response) {
         data = JSON.parse(response.toString())
         console.log(data);
-        res.end()
+       let recipesList = data.results.map( r => { return {
+           ingredients: r.ingredients,
+           title: r.title,
+           img: r.thumbnail,
+           href: r.href
+
+       } })
+       console.log(recipesList);
+       res.send(recipesList)
     })
 })
 
