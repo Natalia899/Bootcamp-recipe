@@ -14,6 +14,27 @@
     <input type="text" placeholder="Ingredient" id="input">
     <button onclick="getReceipes()" id="get"> Search</button>
 
+
+    <script id="recipes-template" type="text/x-handlebars-template">
+      {{#each data}} 
+      <div class='recipe'> 
+        
+        <img class='picture' src='{{this.img}}'> <br>
+        <p class='title'>  {{this.title}}</p>
+        <ul class='ingredients'> {{#each this.ingredients}}
+              <li> {{this}} </li>
+          {{/each}}
+          
+        </ul>
+        
+      </div>
+    {{/each}}
+        
+  </script>
+
+
+    <div class='recipe-container'></div>
+
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
